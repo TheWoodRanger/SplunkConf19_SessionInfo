@@ -1,5 +1,5 @@
 //  to fetch the presentations/video via bash after creating your JSON of slide reference data
-//  while read line ; do title=$(echo $line | jq -r '.title' | sed ) && slidesurl=$(echo $line | jq -r '.slidesurl') && curl -o "$title.pdf" $slidesurl ; done < <(jq -r -c '.[]| {title: .Title, slidesurl: .SlidesUrl, videourl: .VideoUrl}' < 'test.json')
+//  //  while read line ; do title=$(echo $line | jq -r '.title') && slidesurl=$(echo $line | jq -r '.slidesurl') && curl -o "$title.pdf" $slidesurl ; done < <(jq -r -c '.[]| {title: .Title, slidesurl: .SlidesUrl, videourl: .VideoUrl}' < 'test.json')
 
 let PresentationArray = []
 
